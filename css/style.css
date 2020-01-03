@@ -158,6 +158,12 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-shrink-width-medium {
+  width: 70% !important; }
+
+.u-margin-center {
+  margin: 0 auto !important; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -282,7 +288,9 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  line-height: 1.8;
+  min-height: 40rem; }
   @media (max-width: 56.25em) {
     .feature-box {
       padding: 2rem; } }
@@ -337,10 +345,6 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg"); }
-    .card__picture--2 {
-      background-image: url("../img/nat-5.jpg"); }
-    .card__picture--3 {
-      background-image: url("../img/nat-5.jpg"); }
   .card__heading {
     position: absolute;
     top: 12rem;
@@ -383,7 +387,7 @@ body {
     font-size: 1.4rem;
     text-transform: uppercase; }
   .card__price-value {
-    font-size: 6rem;
+    font-size: 2rem;
     font-weight: 100; }
   @media (max-width: 56.25em) {
     .card {
@@ -416,7 +420,7 @@ body {
 
 .story {
   width: 75%;
-  margin: 0 auto;
+  margin: 0 auto 10rem;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
