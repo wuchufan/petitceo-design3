@@ -6,8 +6,30 @@
   border-radius:3px;
   padding:6rem;
   padding-left:9rem;
-  transform:skewX(-12deg);
+  // transform:skewX(-12deg);
   font-size:$default-font-size;
+
+  &:nth-child(odd){
+      transform:skewX(-10deg);
+
+      & .story__shape{
+        transform:translateX(-3rem) skewX(10deg);
+      }
+
+      & .story__text{
+        transform:skewX(10deg);
+      }
+  }
+  &:nth-child(even){
+    transform:skewX(10deg);
+    & .story__shape{
+      transform:translateX(-3rem) skewX(-10deg);
+    }
+
+    & .story__text{
+      transform:skewX(-10deg);
+    }
+  }
 
   @include respond(tab-port){
     width:100%;
@@ -27,9 +49,15 @@
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path:circle(50% at 50% 50%);
     clip-path:circle(50% at 50% 50%);
-    transform:translateX(-3rem) skewX(12deg);
+    // transform:translateX(-3rem) skewX(12deg);
     overflow: hidden;
     position:relative;
+    // &:nth-child(odd){
+    //     transform:translateX(-3rem) skewX(12deg);
+    // }
+    // &:nth-child(even){
+    //   transform:skewX(-12deg);
+    // }
 
     @include respond(phone){
       transform: translateX(-3rem) skewX(0);
@@ -44,7 +72,13 @@
   }
 
   &__text{
-    transform:skewX(12deg);
+    // &:nth-child(odd){
+    //     transform:skewX(-12deg);
+    // }
+    // &:nth-child(even){
+    //   transform:skewX(12deg);
+    // }
+
     @include respond(phone){
       transform: skewX(0);
     }

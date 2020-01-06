@@ -69,14 +69,15 @@
   &__text{
     font-size:1.4rem;
     margin-bottom:4rem;
-    -moz-column-count:2;
-    column-count: 2;
-    column-gap:4rem;
-    column-rule:1px solid $color-grey-light-1;
+    // -moz-column-count:2;
+    // column-count: 2;
+    // column-gap:4rem;
+    // column-rule:1px solid $color-grey-light-1;
     -moz-hypens:auto;
     -ms-hypens:auto;
     -webkit-hyphens:auto;
     hyphens: auto;
+
   }
 
 
