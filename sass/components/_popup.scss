@@ -8,6 +8,7 @@
   z-index:9999;
   opacity:0;
   visibility:hidden;
+  
 
   &:target{
     transition: all 1s ease;
@@ -33,7 +34,7 @@
     }
   }
   &:target &__content{
-    transform:translate(-50%,-50%) scale(1);
+     transform:translate(-50%,-50%) scale(1);
     opacity:1;
   }
 
