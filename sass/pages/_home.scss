@@ -24,9 +24,9 @@
 
 }
 
-.section-tours{
+.section-education{
   background-color: $color-grey-light-1;
-  padding:30rem 0 15rem 0;
+  padding:30rem 0 10rem 0;
   margin-top:-11rem;
   @include respond(tab-port){
     padding:20rem 0 10rem 0;
@@ -34,12 +34,11 @@
 
 }
 
-.section-story{
+.section-courses{
   position:relative;
   padding:15rem 0;
-  background-image:linear-gradient(to right bottom,rgba($color-white,0.8),rgba($color-white,0.8)),url(../img/nat-1-large.jpg);
-  background-attachment: fixed;
-  background-size:cover;
+  background-color: $color-grey-light-1;
+
   @include respond(tab-port){
     padding:10rem 0;
   }
