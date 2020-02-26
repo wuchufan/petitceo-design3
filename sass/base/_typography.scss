@@ -75,12 +75,18 @@ body{
   font-size: $default-font-size;
   font-weight:700;
   text-transform:uppercase;
+
+  &-dark{
+    font-size: 1.5rem;
+    font-weight:700;
+    text-transform:uppercase;
+    color:$color-grey-dark-3;
+  }
 }
 
 .heading-fourthly{
   font-size: 3rem;
   font-weight:700;
-
 }
 
 .paragraph{

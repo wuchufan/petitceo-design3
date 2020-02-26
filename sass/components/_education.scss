@@ -7,6 +7,10 @@
     flex-direction: column;
     align-items:center;
 
+    &__text{
+      width:80%;
+    }
+
 }
 
 
@@ -24,7 +28,7 @@
   font-size:3rem;
   color:$color-white;
   text-align: center;
-  line-height: 6rem;
+  line-height: 6.5rem;
   width:100%;
   height:100%;
 }
