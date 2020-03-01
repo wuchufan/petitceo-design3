@@ -522,6 +522,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  @media (max-width: 56.25em) {
+    .card-container {
+      flex-direction: column; } }
 
 .card {
   flex-basis: 24%;
@@ -530,6 +533,9 @@ body {
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  @media (max-width: 56.25em) {
+    .card {
+      margin-bottom: 5rem; } }
   .card__image-box {
     position: relative; }
   .card__white-screen {
