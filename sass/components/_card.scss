@@ -23,6 +23,27 @@
   overflow: hidden;
   box-shadow:0 1.5rem 4rem rgba($color-black, .15);
 
+  &__button{
+    border-radius: 10rem;
+    padding:1rem;
+    border: 1px $color-grey-dark-2 solid;
+    transition:all .2s ease !important;
+
+    &:hover{
+      transform: translateY(-0.3rem);
+      &::after{
+        transform:scaleX(1.1) scaleY(1.6);
+        opacity:0;
+      }
+
+    }
+    &:active,
+    &:focus{
+      outline:none;
+      transform:translateY(0.1rem);
+    }
+
+  }
 
   &__image-box{
     position:relative;
@@ -43,6 +64,7 @@
     &-element{
       opacity:0;
       transition:opacity .2s ease;
+      cursor:pointer;
     }
 
     &:hover{
